@@ -40,14 +40,14 @@ router.put('/:id', getPlanta, async (req, res) => {
   if (req.body.nome != null) {
     res.planta.nome = req.body.nome;
   }
-  if (req.body.email != null) {
-    res.planta.email = req.body.email;
+  if (req.body.descricao != null) {
+    res.planta.descricao = req.body.descricao;
   }
-  if (req.body.telefone != null) {
-    res.planta.telefone = req.body.telefone;
+  if (req.body.terreno != null) {
+    res.planta.terreno = req.body.terreno;
   }
-  if (req.body.endereco != null) {
-    res.planta.endereco = req.body.endereco;
+  if (req.body.praga != null) {
+    res.planta.praga = req.body.praga;
   }
   if (req.body.foto != null) {
     res.planta.foto = req.body.foto;
