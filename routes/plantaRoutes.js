@@ -21,9 +21,9 @@ router.get('/:id', getPlanta, (req, res) => {
 router.post('/', async (req, res) => {
   const planta = new Planta({
     nome: req.body.nome,
-    descricao: req.body.email,
-    terreno: req.body.telefone,
-    praga: req.body.endereco,
+    descricao: req.body.descricao,
+    terreno: req.body.terreno,
+    praga: req.body.praga,
     foto: req.body.foto,
   });
 
