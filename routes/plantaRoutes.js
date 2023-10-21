@@ -64,7 +64,7 @@ router.put('/:id', getPlanta, async (req, res) => {
 // Rota para excluir um contato por ID
 router.delete('/:id', getPlanta, async (req, res) => {
   try {
-    await res.planta.remove();
+    await res.planta.deleteOne();
     res.json({ message: 'Planta excluída com sucesso!' });
   } catch (err) {
     res.status(500).json({ message: err.message });
