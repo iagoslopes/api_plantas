@@ -5,7 +5,15 @@ const plantaSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  nome_cientifico: {
+    type: String,
+    required: true,
+  },
   descricao: {
+    type: String,
+    required: true,
+  },
+  tipo: {
     type: String,
     required: true,
   },
@@ -14,6 +22,10 @@ const plantaSchema = new mongoose.Schema({
     required: true,
   },
   praga: {
+    type: String,
+    required: true,
+  },
+  cultivo: {
     type: String,
     required: true,
   },
