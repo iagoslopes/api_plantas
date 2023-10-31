@@ -38,19 +38,19 @@ router.post('/', async (req, res) => {
 // Rota para atualizar uma praga por ID
 router.put('/:id', getPraga, async (req, res) => {
   if (req.body.nome != null) {
-    res.planta.nome = req.body.nome;
+    res.praga.nome = req.body.nome;
   }
   if (req.body.nome_cientifico != null) {
-    res.planta.nome_cientifico = req.body.nome_cientifico;
+    res.praga.nome_cientifico = req.body.nome_cientifico;
   }
   if (req.body.descricao != null) {
-    res.planta.descricao = req.body.descricao;
+    res.praga.descricao = req.body.descricao;
   }
   if (req.body.combate != null) {
-    res.planta.combate = req.body.combate;
+    res.praga.combate = req.body.combate;
   }
   if (req.body.foto != null) {
-    res.planta.foto = req.body.foto;
+    res.praga.foto = req.body.foto;
   }
 
   try {

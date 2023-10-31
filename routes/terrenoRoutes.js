@@ -38,19 +38,19 @@ router.post('/', async (req, res) => {
 // Rota para atualizar um terreno por ID
 router.put('/:id', getTerreno, async (req, res) => {
   if (req.body.nome != null) {
-    res.planta.nome = req.body.nome;
+    res.terreno.nome = req.body.nome;
   }
   if (req.body.nome_cientifico != null) {
-    res.planta.nome_cientifico = req.body.nome_cientifico;
+    res.terreno.nome_cientifico = req.body.nome_cientifico;
   }
   if (req.body.descricao != null) {
-    res.planta.descricao = req.body.descricao;
+    res.terreno.descricao = req.body.descricao;
   }
   if (req.body.caracteristica != null) {
-    res.planta.caracteristica = req.body.caracteristica;
+    res.terreno.caracteristica = req.body.caracteristica;
   }
   if (req.body.foto != null) {
-    res.planta.foto = req.body.foto;
+    res.terreno.foto = req.body.foto;
   }
 
   try {
