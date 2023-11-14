@@ -12,9 +12,11 @@ app.use(cors());
 const plantaRouter = require('./routes/plantaRoutes');
 const terrenoRouter = require('./routes/terrenoRoutes');
 const pragaRouter = require('./routes/pragaRoutes');
+const contatoRouter = require('./routes/contatoRoutes');
 app.use('/plantas', plantaRouter);
 app.use('/terrenos', terrenoRouter);
 app.use('/pragas', pragaRouter);
+app.use('/contato', contatoRouter);
 
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
